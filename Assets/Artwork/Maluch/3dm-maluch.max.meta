@@ -1,0 +1,500 @@
+fileFormatVersion: 2
+guid: cee16066f21ae5b4e95e2ba97bb8b7f0
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: body
+    100004: Box01
+    100006: Box02
+    100008: Box03
+    100010: Box04
+    100012: Box06
+    100014: Circle01
+    100016: Circle02
+    100018: Circle04
+    100020: Circle05
+    100022: Circle06
+    100024: Circle07
+    100026: Circle08
+    100028: Circle09
+    100030: czarne
+    100032: dokluczyka
+    100034: dokluczyka01
+    100036: guma lampy
+    100038: guma lampy01
+    100040: guma03
+    100042: guma04
+    100044: guma1
+    100046: guma2
+    100048: guma6
+    100050: GUMKA
+    100052: karoseria
+    100054: kier1
+    100056: kier2
+    100058: kier3
+    100060: kier4
+    100062: kierownica
+    100064: kierunek bok
+    100066: kierunek bok01
+    100068: kierunekbok02
+    100070: kierunekbok1
+    100072: klamka
+    100074: klamka obudowa
+    100076: klamka obudowa01
+    100078: klamka01
+    100080: kolo03
+    100082: kolo11
+    100084: kolo12
+    100086: kolo13
+    100088: lampa prz__d
+    100090: lampa prz__d01
+    100092: Line01
+    100094: Line06
+    100096: Line07
+    100098: Line08
+    100100: listwy
+    100102: Loft01
+    100104: Loft02
+    100106: lusterko
+    100108: lusterko 1
+    100110: lusterko __rodek
+    100112: lusterko01
+    100114: lusterko02
+    100116: lustro
+    100118: lustro01
+    100120: NGon02
+    100122: NGon05
+    100124: NGon06
+    100126: NGon07
+    100128: Object01
+    100130: Patch01
+    100132: Patch02
+    100134: Patch03
+    100136: Patch04
+    100138: podwozie
+    100140: Point01
+    100142: pokrywa
+    100144: pokrywa01
+    100146: Rectangle01
+    100148: Rectangle02
+    100150: Rectangle03
+    100152: Rectangle04
+    100154: Rectangle05
+    100156: Shape02
+    100158: Shape03
+    100160: SZY
+    100162: szyba03
+    100164: szyba04
+    100166: szyba1
+    100168: szyba2
+    100170: Text02
+    100172: tylna lampa
+    100174: tylna lampa01
+    100176: tylna szyba
+    100178: wycieraczka
+    100180: wycieraczka01
+    100182: zderzak prz__d
+    100184: zderzak ty__
+    100186: znaczek
+    400000: //RootNode
+    400002: body
+    400004: Box01
+    400006: Box02
+    400008: Box03
+    400010: Box04
+    400012: Box06
+    400014: Circle01
+    400016: Circle02
+    400018: Circle04
+    400020: Circle05
+    400022: Circle06
+    400024: Circle07
+    400026: Circle08
+    400028: Circle09
+    400030: czarne
+    400032: dokluczyka
+    400034: dokluczyka01
+    400036: guma lampy
+    400038: guma lampy01
+    400040: guma03
+    400042: guma04
+    400044: guma1
+    400046: guma2
+    400048: guma6
+    400050: GUMKA
+    400052: karoseria
+    400054: kier1
+    400056: kier2
+    400058: kier3
+    400060: kier4
+    400062: kierownica
+    400064: kierunek bok
+    400066: kierunek bok01
+    400068: kierunekbok02
+    400070: kierunekbok1
+    400072: klamka
+    400074: klamka obudowa
+    400076: klamka obudowa01
+    400078: klamka01
+    400080: kolo03
+    400082: kolo11
+    400084: kolo12
+    400086: kolo13
+    400088: lampa prz__d
+    400090: lampa prz__d01
+    400092: Line01
+    400094: Line06
+    400096: Line07
+    400098: Line08
+    400100: listwy
+    400102: Loft01
+    400104: Loft02
+    400106: lusterko
+    400108: lusterko 1
+    400110: lusterko __rodek
+    400112: lusterko01
+    400114: lusterko02
+    400116: lustro
+    400118: lustro01
+    400120: NGon02
+    400122: NGon05
+    400124: NGon06
+    400126: NGon07
+    400128: Object01
+    400130: Patch01
+    400132: Patch02
+    400134: Patch03
+    400136: Patch04
+    400138: podwozie
+    400140: Point01
+    400142: pokrywa
+    400144: pokrywa01
+    400146: Rectangle01
+    400148: Rectangle02
+    400150: Rectangle03
+    400152: Rectangle04
+    400154: Rectangle05
+    400156: Shape02
+    400158: Shape03
+    400160: SZY
+    400162: szyba03
+    400164: szyba04
+    400166: szyba1
+    400168: szyba2
+    400170: Text02
+    400172: tylna lampa
+    400174: tylna lampa01
+    400176: tylna szyba
+    400178: wycieraczka
+    400180: wycieraczka01
+    400182: zderzak prz__d
+    400184: zderzak ty__
+    400186: znaczek
+    2300000: Box01
+    2300002: Box02
+    2300004: Box03
+    2300006: Box04
+    2300008: Box06
+    2300010: Circle01
+    2300012: Circle02
+    2300014: Circle04
+    2300016: Circle05
+    2300018: Circle06
+    2300020: Circle07
+    2300022: Circle08
+    2300024: Circle09
+    2300026: czarne
+    2300028: dokluczyka
+    2300030: dokluczyka01
+    2300032: guma lampy
+    2300034: guma lampy01
+    2300036: guma03
+    2300038: guma04
+    2300040: guma1
+    2300042: guma2
+    2300044: guma6
+    2300046: GUMKA
+    2300048: karoseria
+    2300050: kier1
+    2300052: kier2
+    2300054: kier3
+    2300056: kier4
+    2300058: kierownica
+    2300060: kierunek bok
+    2300062: kierunek bok01
+    2300064: kierunekbok02
+    2300066: kierunekbok1
+    2300068: klamka
+    2300070: klamka obudowa
+    2300072: klamka obudowa01
+    2300074: klamka01
+    2300076: lampa prz__d
+    2300078: lampa prz__d01
+    2300080: Line01
+    2300082: Line06
+    2300084: Line07
+    2300086: Line08
+    2300088: listwy
+    2300090: Loft01
+    2300092: Loft02
+    2300094: lusterko
+    2300096: lusterko 1
+    2300098: lusterko __rodek
+    2300100: lusterko01
+    2300102: lusterko02
+    2300104: lustro
+    2300106: lustro01
+    2300108: NGon02
+    2300110: NGon05
+    2300112: NGon06
+    2300114: NGon07
+    2300116: Object01
+    2300118: Patch01
+    2300120: Patch02
+    2300122: Patch03
+    2300124: Patch04
+    2300126: podwozie
+    2300128: pokrywa
+    2300130: pokrywa01
+    2300132: Rectangle01
+    2300134: Rectangle02
+    2300136: Rectangle03
+    2300138: Rectangle04
+    2300140: Rectangle05
+    2300142: Shape02
+    2300144: Shape03
+    2300146: SZY
+    2300148: szyba03
+    2300150: szyba04
+    2300152: szyba1
+    2300154: szyba2
+    2300156: Text02
+    2300158: tylna szyba
+    2300160: wycieraczka
+    2300162: wycieraczka01
+    2300164: zderzak prz__d
+    2300166: zderzak ty__
+    3300000: Box01
+    3300002: Box02
+    3300004: Box03
+    3300006: Box04
+    3300008: Box06
+    3300010: Circle01
+    3300012: Circle02
+    3300014: Circle04
+    3300016: Circle05
+    3300018: Circle06
+    3300020: Circle07
+    3300022: Circle08
+    3300024: Circle09
+    3300026: czarne
+    3300028: dokluczyka
+    3300030: dokluczyka01
+    3300032: guma lampy
+    3300034: guma lampy01
+    3300036: guma03
+    3300038: guma04
+    3300040: guma1
+    3300042: guma2
+    3300044: guma6
+    3300046: GUMKA
+    3300048: karoseria
+    3300050: kier1
+    3300052: kier2
+    3300054: kier3
+    3300056: kier4
+    3300058: kierownica
+    3300060: kierunek bok
+    3300062: kierunek bok01
+    3300064: kierunekbok02
+    3300066: kierunekbok1
+    3300068: klamka
+    3300070: klamka obudowa
+    3300072: klamka obudowa01
+    3300074: klamka01
+    3300076: lampa prz__d
+    3300078: lampa prz__d01
+    3300080: Line01
+    3300082: Line06
+    3300084: Line07
+    3300086: Line08
+    3300088: listwy
+    3300090: Loft01
+    3300092: Loft02
+    3300094: lusterko
+    3300096: lusterko 1
+    3300098: lusterko __rodek
+    3300100: lusterko01
+    3300102: lusterko02
+    3300104: lustro
+    3300106: lustro01
+    3300108: NGon02
+    3300110: NGon05
+    3300112: NGon06
+    3300114: NGon07
+    3300116: Object01
+    3300118: Patch01
+    3300120: Patch02
+    3300122: Patch03
+    3300124: Patch04
+    3300126: podwozie
+    3300128: pokrywa
+    3300130: pokrywa01
+    3300132: Rectangle01
+    3300134: Rectangle02
+    3300136: Rectangle03
+    3300138: Rectangle04
+    3300140: Rectangle05
+    3300142: Shape02
+    3300144: Shape03
+    3300146: SZY
+    3300148: szyba03
+    3300150: szyba04
+    3300152: szyba1
+    3300154: szyba2
+    3300156: Text02
+    3300158: tylna szyba
+    3300160: wycieraczka
+    3300162: wycieraczka01
+    3300164: zderzak prz__d
+    3300166: zderzak ty__
+    4300000: Circle01
+    4300002: NGon02
+    4300004: Line01
+    4300006: Circle02
+    4300008: Circle04
+    4300010: Circle05
+    4300012: NGon05
+    4300014: Line06
+    4300016: Line07
+    4300018: Circle06
+    4300020: Circle07
+    4300022: NGon06
+    4300024: Circle08
+    4300026: Circle09
+    4300028: NGon07
+    4300030: Line08
+    4300032: klamka
+    4300034: Loft01
+    4300036: Loft02
+    4300038: listwy
+    4300040: zderzak prz__d
+    4300042: GUMKA
+    4300044: szyba1
+    4300046: guma2
+    4300048: szyba2
+    4300050: guma1
+    4300052: guma03
+    4300054: guma04
+    4300056: szyba03
+    4300058: szyba04
+    4300060: tylna szyba
+    4300062: guma6
+    4300064: lampa prz__d
+    4300066: guma lampy
+    4300068: guma lampy01
+    4300070: lampa prz__d01
+    4300072: kier1
+    4300074: kier2
+    4300076: kier3
+    4300078: kier4
+    4300080: kierunekbok1
+    4300082: kierunek bok
+    4300084: kierunekbok02
+    4300086: kierunek bok01
+    4300088: czarne
+    4300090: Object01
+    4300092: Text02
+    4300094: lusterko
+    4300096: lusterko
+    4300098: lustro
+    4300100: lustro01
+    4300102: lusterko01
+    4300104: lusterko02
+    4300106: pokrywa
+    4300108: pokrywa01
+    4300110: klamka obudowa
+    4300112: podwozie
+    4300114: dokluczyka
+    4300116: klamka obudowa01
+    4300118: klamka01
+    4300120: dokluczyka01
+    4300122: wycieraczka
+    4300124: wycieraczka01
+    4300126: lusterko __rodek
+    4300128: Rectangle01
+    4300130: Rectangle02
+    4300132: Rectangle03
+    4300134: Rectangle04
+    4300136: Rectangle05
+    4300138: Box01
+    4300140: Box02
+    4300142: Box03
+    4300144: kierownica
+    4300146: Box04
+    4300148: Box06
+    4300150: SZY
+    4300152: karoseria
+    4300154: zderzak ty__
+    4300156: Patch01
+    4300158: Patch02
+    4300160: Shape02
+    4300162: Patch03
+    4300164: Patch04
+    4300166: Shape03
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
