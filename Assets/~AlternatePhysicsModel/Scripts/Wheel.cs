@@ -291,6 +291,7 @@ public class Wheel : MonoBehaviour {
 			suspensionForce = SuspensionForce ();
 			roadForce = RoadForce ();
 			body.AddForceAtPosition (suspensionForce + roadForce, pos);
+			Debug.Log("On ground");
 		}
 		else
 		{
@@ -308,6 +309,7 @@ public class Wheel : MonoBehaviour {
 				angularVelocity = 0;
 			slipRatio = 0;
 			slipVelo = 0;
+			Debug.Log("In Air");
 		}
 		
 		if (skid != null && Mathf.Abs(slipRatio) > 0.2)
@@ -319,8 +321,33 @@ public class Wheel : MonoBehaviour {
 		rotation += angularVelocity * Time.deltaTime;
 		if (model != null)
 		{
-			model.transform.localPosition = Vector3.up * (compression - 1.0f) * suspensionTravel;
+			model.transform.localPosition = Vector3.up * (compression - 1.0f) * suspensionTravel * (1/transform.lossyScale.x);
 			model.transform.localRotation = Quaternion.Euler (Mathf.Rad2Deg * rotation, maxSteeringAngle * steering, 0);
 		}
+	}
+	void Update()
+	{
+		//Draw debug wheel
+		float deg2Rad = Mathf.PI/180;
+		for(int i=0; i<18; ++i)
+		{
+			float degInRad = i*20*deg2Rad;
+			float degInRadNext = (i+1)*20*deg2Rad;
+
+			Vector3 wheelPosition = transform.position;
+			wheelPosition += Vector3.up * (compression - 1.0f) * suspensionTravel;
+			Vector3 start = wheelPosition;
+			Vector3 end = wheelPosition;
+		
+			start += transform.forward * Mathf.Cos(degInRad)*radius;
+			start += transform.up * Mathf.Sin(degInRad)*radius;
+			
+			end += transform.forward * Mathf.Cos(degInRadNext)*radius;
+			end += transform.up * Mathf.Sin(degInRadNext)*radius;
+			Debug.DrawLine(start, end);
+		}
+
+		//Draw debug suspension
+		Debug.DrawLine(transform.position, transform.position - transform.up * suspensionTravel);
 	}
 }

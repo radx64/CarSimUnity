@@ -162,8 +162,11 @@ public class Drivetrain : MonoBehaviour {
 	
 	// Debug GUI. Disable when not needed.
 	void OnGUI () {
-		GUILayout.Label("RPM: "+rpm);
-		GUILayout.Label("Gear: "+(gear-1));
-		automatic = GUILayout.Toggle(automatic, "Automatic Transmission");
+		GUI.Box(new Rect(0,0,200,100),"Drivetrain");
+		GUI.Label(new Rect(0,20,200,100),"RPM: "+rpm);
+		GUI.Label(new Rect(0,40,200,100),"Gear: "+(gear-1));
+		automatic = GUI.Toggle(new Rect(0,60,200,100),automatic, "Automatic Transmission");
+
+		GUI.Box(new Rect(400,0,200,100),"Engine torque");
 	}
 }
