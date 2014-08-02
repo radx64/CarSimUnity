@@ -46,21 +46,23 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\~AlternatePhysicsModel\Scripts\AerodynamicResistance.cs" />
-     <Compile Include="Assets\~AlternatePhysicsModel\Scripts\AntiRollBar.cs" />
-     <Compile Include="Assets\~AlternatePhysicsModel\Scripts\CarController.cs" />
-     <Compile Include="Assets\~AlternatePhysicsModel\Scripts\Drivetrain.cs" />
-     <Compile Include="Assets\~AlternatePhysicsModel\Scripts\Skidmarks.cs" />
-     <Compile Include="Assets\~AlternatePhysicsModel\Scripts\SoundController.cs" />
-     <Compile Include="Assets\~AlternatePhysicsModel\Scripts\TractionHelper.cs" />
-     <Compile Include="Assets\~AlternatePhysicsModel\Scripts\Wheel.cs" />
-     <Compile Include="Assets\~AlternatePhysicsModel\Scripts\Wing.cs" />
+     <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\AerodynamicResistance.cs" />
+     <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\AntiRollBar.cs" />
+     <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\CarController.cs" />
+     <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\Drivetrain.cs" />
+     <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\GUIHelper.cs" />
+     <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\Skidmarks.cs" />
+     <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\SoundController.cs" />
+     <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\TractionHelper.cs" />
+     <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\Wheel.cs" />
+     <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\Wing.cs" />
+     <Compile Include="Assets\Scripts\Drawing.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Artwork\Destroyed_city_FREE\Destroyed_city_FREE_Info.txt" />
-     <None Include="Assets\~AlternatePhysicsModel\Source Assets\Cars\Car.shader" />
+     <None Include="Assets\PacejkaPhysicsTestModel\Source Assets\Cars\Car.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\~AlternatePhysicsModel\Source Assets\Skidmarks\Skidmarks.shader" />
+     <None Include="Assets\PacejkaPhysicsTestModel\Source Assets\Skidmarks\Skidmarks.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="Assets\Artwork\Destroyed_city_FREE\Shaders\AlphaTest-DiffuseDoubleSide.shader" />
   </ItemGroup>

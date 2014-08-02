@@ -54,9 +54,9 @@
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Artwork\Destroyed_city_FREE\Destroyed_city_FREE_Info.txt" />
-     <None Include="Assets\~AlternatePhysicsModel\Source Assets\Cars\Car.shader" />
+     <None Include="Assets\PacejkaPhysicsTestModel\Source Assets\Cars\Car.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\~AlternatePhysicsModel\Source Assets\Skidmarks\Skidmarks.shader" />
+     <None Include="Assets\PacejkaPhysicsTestModel\Source Assets\Skidmarks\Skidmarks.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="Assets\Artwork\Destroyed_city_FREE\Shaders\AlphaTest-DiffuseDoubleSide.shader" />
   </ItemGroup>
