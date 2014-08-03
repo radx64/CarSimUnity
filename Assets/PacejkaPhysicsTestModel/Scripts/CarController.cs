@@ -73,6 +73,9 @@ public class CarController : MonoBehaviour {
 	// factor, to make the correction easier.
 	public float steerCorrectionFactor = 4.0f;
 
+    public Texture speedometer_tex;
+    public Texture speedometer_dial;
+
 	// Used by SoundController to get average slip velo of all wheels for skid sounds.
 	public float slipVelo {
 		get {
@@ -220,5 +223,15 @@ public class CarController : MonoBehaviour {
 		GUI.Box(new Rect(200,0,200,100),"Car controller");
 		GUI.Label (new Rect(200,20,100,200),"km/h: " +Mathf.Round(rigidbody.velocity.magnitude * 3.6f));
 		tractionControl = GUI.Toggle(new Rect(200,40,300,20), tractionControl, "Traction Control");
+
+        GUI.DrawTexture(new Rect(600, 0, 128, 128), speedometer_tex);
+
+        Vector2 pivotPoint = new Vector2(600 + 64, 0 + 64);
+
+        float needleDeg = (rigidbody.velocity.magnitude * 3.6f / 140.0f) * 250;
+
+        GUIUtility.RotateAroundPivot(needleDeg - 125, pivotPoint); 
+
+        GUI.DrawTexture(new Rect(600, 0, 128, 128), speedometer_dial);
 	}
 }
