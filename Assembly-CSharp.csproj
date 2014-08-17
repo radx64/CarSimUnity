@@ -56,15 +56,65 @@
      <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\TractionHelper.cs" />
      <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\Wheel.cs" />
      <Compile Include="Assets\PacejkaPhysicsTestModel\Scripts\Wing.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\BirdsBehaviour.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\BlobShadowController.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\CarCamera.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\CombineChildren.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\DisableObjects.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\EffectController.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\Generate2DReflection.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\MeshCombineUtility.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\MirrorReflection.cs" />
+     <Compile Include="Assets\Scripts\CSharpScripts\ToggleObjectTrigger.cs" />
      <Compile Include="Assets\Scripts\Drawing.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Pro Standard Assets\Glass Refraction\Glass-Stained-BumpDistort.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\GlowEffectDownsample.shader" />
+     <None Include="Assets\Shaders\PolyTerrain\FirstPassLightmap.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Artwork\Destroyed_city_FREE\Destroyed_city_FREE_Info.txt" />
+     <None Include="Assets\Shaders\LightMappedDiffusetDetail.shader" />
+     <None Include="Assets\Shaders\LightsEmmissive.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Shaders\ShadowProjection.shader" />
      <None Include="Assets\PacejkaPhysicsTestModel\Source Assets\Cars\Car.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\MotionBlur.shader" />
+     <None Include="Assets\Shaders\GlassReflect.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\ColorCorrectionEffect_26.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\PacejkaPhysicsTestModel\Source Assets\Skidmarks\Skidmarks.shader" />
+     <None Include="Assets\Pro Standard Assets\Glass Refraction\Glass-Stained-BumpSpecDistort.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\GlowEffectDownsample_26.shader" />
+     <None Include="Assets\Shaders\Normal-BumpSpec_EnvLightmapped.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\SSAOShader.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\NoiseEffectShaderYUV.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\Shaders\AlphaTest-Diffuse-GEqual.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\Shaders\Skidmarks.shader" />
+     <None Include="Assets\Shaders\Glassreflect2D.shader" />
+     <None Include="Assets\Pro Standard Assets\Water\Sources\FX-Water.shader" />
+     <None Include="Assets\Shaders\GlassBuilding.shader" />
+     <None Include="Assets\Shaders\PolyTerrain\polysplatting.cginc" />
+     <None Include="Assets\Pro Standard Assets\Image Based\GrayscaleEffect.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\SepiaToneEffect.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\TwirlEffect.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\VortexEffect.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\Shaders\Alpha-VertexLitGlow02.shader" />
      <None Include="Assets\Artwork\Destroyed_city_FREE\Shaders\AlphaTest-DiffuseDoubleSide.shader" />
+     <None Include="Assets\Pro Standard Assets\Image Based\EdgeDetectX.shader" />
+     <None Include="Assets\Shaders\MirrorReflectionLit.shader" />
+     <None Include="Assets\Textures\VFX\ShadowProjection.shader" />
+     <None Include="Assets\Shaders\TransparentLightMappedVertexLiZWrite.shader" />
+     <None Include="Assets\Shaders\Alpha-Diffuse-ZWrite.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{289BD497-1E27-BCCD-7B3C-E3A65994876F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
