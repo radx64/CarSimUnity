@@ -20,11 +20,11 @@ public class Drivetrain : MonoBehaviour {
 	public float maxRPM = 6400;
 
 	// engine's maximal torque (in Nm) and RPM.
-	public float maxTorque = 664;
+	public float maxTorque = 39;
 	public float torqueRPM = 4000;
 
 	// engine's maximal power (in Watts) and RPM.
-	public float maxPower = 317000;
+	public float maxPower = 17000;
 	public float powerRPM = 5000;
 
 	// engine inertia (how fast the engine spins up), in kg * m^2
@@ -52,7 +52,7 @@ public class Drivetrain : MonoBehaviour {
 	public float throttleInput = 0;
 	
 	// shift gears automatically?
-	public bool automatic = true;
+	public bool automatic = false;
 
 	// state
 	public int gear = 2;
@@ -92,9 +92,9 @@ public class Drivetrain : MonoBehaviour {
 		float inertia = engineInertia * Sqr(ratio);
 		float engineFrictionTorque = engineBaseFriction + rpm * engineRPMFriction;
 		float engineTorque = (CalcEngineTorque() + Mathf.Abs(engineFrictionTorque)) * throttle;
-		slipRatio = 0.0f;		
-		
-		if (ratio == 0)
+		slipRatio = 0.0f;
+
+		if (ratio == 0.0f)
 		{
 			// Neutral gear - just rev up engine
 			float engineAngularAcceleration = (engineTorque-engineFrictionTorque) / engineInertia;
@@ -102,6 +102,12 @@ public class Drivetrain : MonoBehaviour {
 			
 			// Apply torque to car body
 			rigidbody.AddTorque(-engineOrientation * engineTorque);
+
+            // Remove all torque to wheels when neutral
+            foreach (Wheel w in poweredWheels)
+            {
+                w.driveTorque = 0;
+            }
 		}
 		else
 		{
@@ -169,6 +175,7 @@ public class Drivetrain : MonoBehaviour {
 	void OnGUI () {
 		GUI.Box(new Rect(0,0,200,100),"Drivetrain");
 		GUI.Label(new Rect(0,20,200,100),"RPM: "+rpm);
+        GUI.Label(new Rect(0, 40, 200, 100), "Clutch: " + slipRatio);
         string gearLabel;
         if (gear == 0)
         {
@@ -183,8 +190,8 @@ public class Drivetrain : MonoBehaviour {
             gearLabel = (gear - 1).ToString();
         }
 
-		GUI.Label(new Rect(0,40,200,100),"Gear: "+gearLabel);
-		automatic = GUI.Toggle(new Rect(0,60,200,100),automatic, "Automatic Transmission");
+		GUI.Label(new Rect(0,60,200,100),"Gear: "+gearLabel);
+		automatic = GUI.Toggle(new Rect(0,80,200,100),automatic, "Automatic Transmission");
 
         GUI.Box(new Rect(400,0,200,100), "Engine torque");
 

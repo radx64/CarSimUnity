@@ -77,6 +77,7 @@ public class Wheel : MonoBehaviour {
 	float maxAngle;
 	float oldAngle;	
 	Skidmarks skid;
+    ParticleSystem[] skidSmoke;
 	
 	float CalcLongitudinalForce(float Fz,float slip)
 	{
@@ -171,6 +172,8 @@ public class Wheel : MonoBehaviour {
 
 		InitSlipMaxima ();
 		skid = FindObjectOfType(typeof(Skidmarks)) as Skidmarks;
+        skidSmoke = GetComponentsInChildren<ParticleSystem>();
+
 		fullCompressionSpringForce = body.mass * massFraction * 2.0f * -Physics.gravity.y;
 	}
 	
@@ -309,11 +312,24 @@ public class Wheel : MonoBehaviour {
 			slipRatio = 0;
 			slipVelo = 0;
 		}
-		
-		if (skid != null && Mathf.Abs(slipRatio) > 0.2)
-			lastSkid = skid.AddSkidMark(hit.point, hit.normal, Mathf.Abs(slipRatio) - 0.2f,lastSkid);
-		else
-			lastSkid = -1;
+
+        if (skid != null && Mathf.Abs(slipRatio) > 0.1)
+        {
+            lastSkid = skid.AddSkidMark(hit.point, hit.normal, Mathf.Abs(slipRatio * 2) - 0.2f, lastSkid);
+
+            foreach (ParticleSystem pe in skidSmoke)
+            {
+                pe.emissionRate = 15;
+            }
+        }
+        else
+        {
+            foreach (ParticleSystem pe in skidSmoke)
+            {
+                pe.emissionRate = 0;
+            }
+            lastSkid = -1;
+        }
 			
 		compression = Mathf.Clamp01 (compression);
 		rotation += angularVelocity * Time.deltaTime;

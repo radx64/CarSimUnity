@@ -50,6 +50,15 @@ ModelImporter:
     4300012: wheelFL
     4300014: wheelRR
     4300016: wheelRL
+    6400000: body
+    6400002: lr_PraweCofanie
+    6400004: ls_LeftStopLight
+    6400006: ls_RightStopLight
+    6400008: szyby
+    6400010: wheelFL
+    6400012: wheelFR
+    6400014: wheelRL
+    6400016: wheelRR
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -60,7 +69,7 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -72,10 +81,10 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .00999999978
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     weldVertices: 1
@@ -87,7 +96,7 @@ ModelImporter:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
