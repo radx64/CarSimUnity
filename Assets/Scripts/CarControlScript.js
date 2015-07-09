@@ -39,8 +39,8 @@ private var slipForwardFriction : float;
 
 function Start () 
 {
-	rigidbody.centerOfMass.z += 0.03;
-    rigidbody.centerOfMass.y -= 0.55;
+	GetComponent.<Rigidbody>().centerOfMass.z += 0.03;
+    GetComponent.<Rigidbody>().centerOfMass.y -= 0.55;
     setValues();
 }
 function setValues()
@@ -65,7 +65,7 @@ function Update()
         transform.rotation.z = 0;
 	}
 	
-	audio.pitch = 0.5 + rigidbody.velocity.magnitude / lowestSteerAtSpeed;
+	GetComponent.<AudioSource>().pitch = 0.5 + GetComponent.<Rigidbody>().velocity.magnitude / lowestSteerAtSpeed;
 	
 	wheelFLTrans.Rotate((wheelFL.rpm/60)*360*Time.deltaTime,0,0);
 	wheelFRTrans.Rotate((wheelFR.rpm/60)*360*Time.deltaTime,0,0);
@@ -109,7 +109,7 @@ function Control()
 		wheelRR.brakeTorque = 0.0;
 	}
 	
-	var speedFactor = rigidbody.velocity.magnitude / lowestSteerAtSpeed;
+	var speedFactor = GetComponent.<Rigidbody>().velocity.magnitude / lowestSteerAtSpeed;
 	var currentSteerAngle = Mathf.Lerp(lowSpeedSteerAngle, highSpeedSteerAngle, speedFactor);
 	currentSteerAngle *= Input.GetAxis("Horizontal");
 	wheelFL.steerAngle = currentSteerAngle;
@@ -129,8 +129,8 @@ function Backlight()
 	{
 		actualBacklightColor = Color.Lerp(actualBacklightColor, notWorkingBacklightColor, Time.deltaTime * 4.0);
 	}
-	leftStopBackLightObject.renderer.material.color = actualBacklightColor;
-	rightStopBackLightObject.renderer.material.color = actualBacklightColor;
+	leftStopBackLightObject.GetComponent.<Renderer>().material.color = actualBacklightColor;
+	rightStopBackLightObject.GetComponent.<Renderer>().material.color = actualBacklightColor;
 }
 
 function Suspension()

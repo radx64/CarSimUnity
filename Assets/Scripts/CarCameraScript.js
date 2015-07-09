@@ -49,7 +49,7 @@ function FixedUpdate()
 {
 	if(cameraMode == 0)
 	{
-		var localVelocity = car.InverseTransformDirection(car.rigidbody.velocity);
+		var localVelocity = car.InverseTransformDirection(car.GetComponent.<Rigidbody>().velocity);
 		if(localVelocity.z < -0.5)
 		{
 			rotationVector.y = car.eulerAngles.y + 180;
@@ -59,17 +59,17 @@ function FixedUpdate()
 			rotationVector.y = car.eulerAngles.y;
 		}
 	
-		var acceleration = car.rigidbody.velocity.magnitude;
-		camera.fieldOfView = defaultFOV + acceleration * zoomRatio;
+		var acceleration = car.GetComponent.<Rigidbody>().velocity.magnitude;
+		GetComponent.<Camera>().fieldOfView = defaultFOV + acceleration * zoomRatio;
 	}
 	if(cameraMode == 1)
 	{
 		rotationVector.y = car.eulerAngles.y + 90;
-		camera.fieldOfView = defaultFOV;
+		GetComponent.<Camera>().fieldOfView = defaultFOV;
 	}
 	if(cameraMode == 2)
 	{
 		rotationVector.y = car.eulerAngles.y + 180;
-		camera.fieldOfView = defaultFOV;	
+		GetComponent.<Camera>().fieldOfView = defaultFOV;	
 	}
 }

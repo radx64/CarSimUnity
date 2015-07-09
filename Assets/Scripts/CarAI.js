@@ -32,7 +32,7 @@ var followedCar : GameObject;
 
 function Start () 
 {
-	rigidbody.centerOfMass.z = 0.2;
+	GetComponent.<Rigidbody>().centerOfMass.z = 0.2;
 }
 
 function FixedUpdate ()
@@ -42,7 +42,7 @@ function FixedUpdate ()
 
 function Update()
 {
-	audio.pitch = 0.5 + rigidbody.velocity.magnitude / lowestSteerAtSpeed;
+	GetComponent.<AudioSource>().pitch = 0.5 + GetComponent.<Rigidbody>().velocity.magnitude / lowestSteerAtSpeed;
 	
 	wheelFLTrans.Rotate((wheelFL.rpm/60)*360*Time.deltaTime,0,0);
 	wheelFRTrans.Rotate((wheelFR.rpm/60)*360*Time.deltaTime,0,0);

@@ -20,9 +20,9 @@ function FixedUpdate ()
     var antiRollForce = (travelL - travelR) * AntiRoll;
  
     if (groundedL)
-        rigidbody.AddForceAtPosition(WheelL.transform.up * -antiRollForce,
+        GetComponent.<Rigidbody>().AddForceAtPosition(WheelL.transform.up * -antiRollForce,
                WheelL.transform.position); 
     if (groundedR)
-        rigidbody.AddForceAtPosition(WheelR.transform.up * antiRollForce,
+        GetComponent.<Rigidbody>().AddForceAtPosition(WheelR.transform.up * antiRollForce,
                WheelR.transform.position); 
     }

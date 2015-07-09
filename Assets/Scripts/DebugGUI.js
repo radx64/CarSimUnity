@@ -19,7 +19,7 @@ function DebugWindowControls(windowID : int)
 	GUI.HorizontalSlider(Rect(100,80,100,20),Input.GetAxis("Vertical"),0.0,-1.0);
 	
 	GUI.Label(Rect(25,100,100,20), "Speed:");
-	var speed = Mathf.FloorToInt(debuggedObject.rigidbody.velocity.magnitude * 3.6);
+	var speed = Mathf.FloorToInt(debuggedObject.GetComponent.<Rigidbody>().velocity.magnitude * 3.6);
 	GUI.Label(Rect(100,100,100,20), speed.ToString() + " km/h");
     
     GUI.Label(Rect(25,125,100,20), "Gear:");
